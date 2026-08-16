@@ -1,4 +1,4 @@
-```css
+
 * {
     margin: 0;
     padding: 0;
@@ -349,35 +349,85 @@ footer strong {
 
 /* =========================
    CELULAR
+   TEXTO + FOTO LADO A LADO
 ========================= */
 
 @media (max-width: 550px) {
 
     section {
-        padding: 60px 5%;
+        padding: 35px 10px;
+    }
+
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
     }
 
     .hero {
-        min-height: auto;
-        padding: 40px 5% 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 25px;
+        min-height: 500px;
+        padding: 35px 10px;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        gap: 10px;
+        align-items: center;
     }
 
     .hero-text {
         width: 100%;
+        max-width: none;
+    }
+
+    .destaque {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 12px;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 27px;
+        line-height: 1.05;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+        display: block;
+    }
+
+    .hero-text > p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 18px;
+    }
+
+    .botoes a {
+        width: 100%;
+        padding: 10px 4px;
+        font-size: 10px;
+        text-align: center;
     }
 
     .hero-imagem {
         width: 100%;
         height: 300px;
         margin: 0;
+        border-radius: 15px;
     }
 
     .hero-imagem img {
@@ -393,20 +443,28 @@ footer strong {
 
     .titulo h2,
     .contato h2 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
-    .botoes {
-        width: 100%;
+    .galeria {
+        grid-template-columns: 1fr;
     }
 
-    .botoes a {
-        width: 100%;
-        text-align: center;
+    .foto img {
+        height: 280px;
+    }
+
+    .botoes .botao-instagram {
+        background: transparent;
+    }
+
+    .contatos {
+        flex-direction: column;
     }
 
     .contatos a {
         width: 100%;
+        min-width: 0;
     }
 }
-```
+

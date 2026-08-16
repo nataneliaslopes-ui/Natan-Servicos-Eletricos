@@ -1,3 +1,4 @@
+```css
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,9 @@ body {
     color: #ffffff;
 }
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+========================= */
 
 header {
     width: 100%;
@@ -56,7 +59,9 @@ nav a:hover {
     color: #ffd000;
 }
 
-/* INÍCIO */
+/* =========================
+   INÍCIO
+========================= */
 
 .hero {
     min-height: 650px;
@@ -128,7 +133,9 @@ nav a:hover {
     border: 1px solid #444444;
 }
 
-/* FOTO PRINCIPAL */
+/* =========================
+   FOTO PRINCIPAL
+========================= */
 
 .hero-imagem {
     width: 100%;
@@ -148,7 +155,9 @@ nav a:hover {
     display: block;
 }
 
-/* SEÇÕES */
+/* =========================
+   SEÇÕES
+========================= */
 
 section {
     padding: 100px 7%;
@@ -178,7 +187,9 @@ section {
     margin-top: 10px;
 }
 
-/* SERVIÇOS */
+/* =========================
+   SERVIÇOS
+========================= */
 
 #servicos {
     background: #101010;
@@ -218,7 +229,9 @@ section {
     line-height: 1.6;
 }
 
-/* TRABALHOS */
+/* =========================
+   TRABALHOS
+========================= */
 
 .galeria {
     display: grid;
@@ -247,7 +260,9 @@ section {
     font-size: 20px;
 }
 
-/* CONTATO */
+/* =========================
+   CONTATO
+========================= */
 
 .contato {
     text-align: center;
@@ -277,7 +292,9 @@ section {
     text-decoration: none;
 }
 
-/* RODAPÉ */
+/* =========================
+   RODAPÉ
+========================= */
 
 footer {
     text-align: center;
@@ -291,7 +308,9 @@ footer strong {
     color: #ffffff;
 }
 
-/* TABLET */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 850px) {
 
@@ -328,7 +347,9 @@ footer strong {
     }
 }
 
-/* CELULAR */
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width: 550px) {
 
@@ -338,10 +359,11 @@ footer strong {
 
     .hero {
         min-height: auto;
-        padding: 45px 5% 60px;
+        padding: 40px 5% 60px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        align-items: stretch;
+        gap: 25px;
     }
 
     .hero-text {
@@ -362,6 +384,7 @@ footer strong {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
 
     .servicos {
@@ -386,3 +409,4 @@ footer strong {
         width: 100%;
     }
 }
+```

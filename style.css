@@ -14,31 +14,21 @@ body {
     color: #ffffff;
 }
 
-
-/* =========================
-   CABEÇALHO
-========================= */
+/* CABEÇALHO */
 
 header {
     width: 100%;
     min-height: 75px;
-
     padding: 20px 7%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: #0d0d0d;
-
     border-bottom: 1px solid #252525;
-
     position: sticky;
     top: 0;
-
     z-index: 100;
 }
-
 
 .logo {
     font-size: 20px;
@@ -46,51 +36,35 @@ header {
     color: #ffffff;
 }
 
-
 .logo:first-letter {
     color: #ffd000;
 }
-
 
 nav {
     display: flex;
     gap: 30px;
 }
 
-
 nav a {
     color: #bbbbbb;
-
     text-decoration: none;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
-
 
 nav a:hover {
     color: #ffd000;
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* INÍCIO */
 
 .hero {
     min-height: 650px;
-
     padding: 80px 7%;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 60px;
-
     align-items: center;
-
     background:
         radial-gradient(
             circle at 80% 40%,
@@ -99,490 +73,316 @@ nav a:hover {
         );
 }
 
-
 .hero-text {
     max-width: 650px;
 }
 
-
 .destaque {
     color: #ffd000;
-
     font-weight: bold;
-
     letter-spacing: 3px;
-
     margin-bottom: 20px;
 }
 
-
 .hero h1 {
     font-size: 62px;
-
     line-height: 1.05;
-
     margin-bottom: 25px;
 }
 
-
 .hero h1 span {
     display: block;
-
     color: #ffd000;
 }
-
 
 .hero-text > p {
     color: #aaaaaa;
-
     font-size: 18px;
-
     line-height: 1.7;
 }
 
-
 .botoes {
     display: flex;
-
     gap: 15px;
-
     margin-top: 30px;
-
     flex-wrap: wrap;
 }
 
-
 .botoes a {
     padding: 15px 25px;
-
     border-radius: 8px;
-
     background: #ffd000;
-
     color: #111111;
-
     text-decoration: none;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
 
-
 .botoes a:hover {
     transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 25px
-        rgba(255, 208, 0, 0.25);
 }
-
 
 .botoes .botao-instagram {
     background: transparent;
-
     color: #ffffff;
-
     border: 1px solid #444444;
 }
 
-
-.botoes .botao-instagram:hover {
-    color: #ffd000;
-
-    border-color: #ffd000;
-}
-
-
-/* =========================
-   FOTO PRINCIPAL
-========================= */
+/* FOTO PRINCIPAL */
 
 .hero-imagem {
     width: 100%;
-
     height: 470px;
-
     overflow: hidden;
-
     border-radius: 20px;
-
     border: 1px solid #292929;
-
     box-shadow:
         0 25px 70px
         rgba(0, 0, 0, 0.5);
 }
 
-
 .hero-imagem img {
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     display: block;
 }
 
-
-/* =========================
-   SEÇÕES
-========================= */
+/* SEÇÕES */
 
 section {
     padding: 100px 7%;
 }
 
-
 .titulo {
     text-align: center;
-
     margin-bottom: 50px;
 }
-
 
 .titulo > p:first-child,
 .contato > p:first-child {
     color: #ffd000;
-
     font-weight: bold;
-
     letter-spacing: 3px;
-
     margin-bottom: 10px;
 }
-
 
 .titulo h2,
 .contato h2 {
     font-size: 42px;
-
     margin-bottom: 12px;
 }
 
-
 .subtitulo {
     color: #888888;
-
     margin-top: 10px;
 }
 
-
-/* =========================
-   SERVIÇOS
-========================= */
+/* SERVIÇOS */
 
 #servicos {
     background: #101010;
 }
 
-
 .servicos {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
 
 .card {
     background: #171717;
-
     padding: 30px;
-
     border: 1px solid #282828;
-
     border-radius: 15px;
-
     transition: 0.3s;
 }
-
 
 .card:hover {
     transform: translateY(-7px);
-
     border-color: #ffd000;
 }
-
 
 .icone {
     font-size: 35px;
-
     margin-bottom: 18px;
 }
 
-
 .card h3 {
     font-size: 22px;
-
     margin-bottom: 10px;
 }
 
-
 .card p {
     color: #999999;
-
     line-height: 1.6;
 }
 
-
-/* =========================
-   TRABALHOS
-========================= */
+/* TRABALHOS */
 
 .galeria {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-
     max-width: 1000px;
-
     margin: auto;
 }
 
-
 .foto {
     background: #121212;
-
     border: 1px solid #282828;
-
     border-radius: 15px;
-
     overflow: hidden;
-
-    transition: 0.3s;
 }
-
-
-.foto:hover {
-    transform: translateY(-5px);
-
-    border-color: #ffd000;
-}
-
 
 .foto img {
     width: 100%;
-
     height: 350px;
-
     object-fit: cover;
-
     display: block;
 }
 
-
 .foto h3 {
     padding: 20px;
-
     font-size: 20px;
 }
 
-
-/* =========================
-   CONTATO
-========================= */
+/* CONTATO */
 
 .contato {
     text-align: center;
-
     background: #101010;
 }
 
-
 .contato > p {
     color: #aaaaaa;
-
     margin-top: 10px;
 }
 
-
 .contatos {
     margin-top: 35px;
-
     display: flex;
-
     justify-content: center;
-
     gap: 20px;
-
     flex-wrap: wrap;
 }
 
-
 .contatos a {
     min-width: 250px;
-
     padding: 20px;
-
     background: #171717;
-
     border: 1px solid #292929;
-
     border-radius: 12px;
-
     color: #ffffff;
-
     text-decoration: none;
-
-    transition: 0.3s;
 }
 
-
-.contatos a:hover {
-    border-color: #ffd000;
-
-    transform: translateY(-4px);
-}
-
-
-.contatos strong {
-    color: #ffd000;
-}
-
-
-/* =========================
-   RODAPÉ
-========================= */
+/* RODAPÉ */
 
 footer {
     text-align: center;
-
     padding: 35px;
-
     background: #050505;
-
     color: #777777;
-
     line-height: 2;
 }
-
 
 footer strong {
     color: #ffffff;
 }
 
-
-/* =========================
-   CELULAR
-========================= */
+/* TABLET */
 
 @media (max-width: 850px) {
 
     header {
         flex-direction: column;
-
         gap: 20px;
     }
 
-
     nav {
         gap: 18px;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
-
     .hero {
         grid-template-columns: 1fr;
-
         padding-top: 60px;
     }
-
 
     .hero h1 {
         font-size: 45px;
     }
 
-
     .hero-imagem {
         height: 350px;
     }
 
-
     .servicos {
         grid-template-columns: 1fr 1fr;
     }
-
 
     .galeria {
         grid-template-columns: 1fr;
     }
 }
 
+/* CELULAR */
 
 @media (max-width: 550px) {
 
     section {
-        padding: 70px 5%;
+        padding: 60px 5%;
     }
-
 
     .hero {
-        padding-left: 5%;
-
-        padding-right: 5%;
+        min-height: auto;
+        padding: 45px 5% 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
+    .hero-text {
+        width: 100%;
+    }
 
     .hero h1 {
         font-size: 38px;
     }
 
-
-    .servicos {
-        grid-template-columns: 1fr;
-    }
-
-
-    .titulo h2,
-    .contato h2 {
-        font-size: 32px;
-    }
-
-
-    .botoes a {
-        width: 100%;
-
-        text-align: center;
-    }
-
-
-    .contatos a {
-        width: 100%;
-    }
-}
-/* Ajuste da foto do poste no celular */
-.hero-image img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-    border-radius: 15px;
-}
-
-@media (max-width: 550px) {
-
     .hero-imagem {
         width: 100%;
         height: 300px;
-        margin-top: 20px;
+        margin: 0;
     }
 
     .hero-imagem img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 15px;
     }
 
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo h2,
+    .contato h2 {
+        font-size: 32px;
+    }
+
+    .botoes {
+        width: 100%;
+    }
+
+    .botoes a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contatos a {
+        width: 100%;
+    }
 }
